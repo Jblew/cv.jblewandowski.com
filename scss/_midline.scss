@@ -25,6 +25,18 @@
         padding-bottom: 0.3rem;
         margin-bottom: 0.2rem;
         border-radius: 2px 2px;
+        
+        line-height: 2rem;
+    }
+}
+
+@media(max-width: $min-width-sm+(-1)) {
+    .midline {
+        margin-top: 0;
+        
+        .email {
+            margin-bottom: 2rem;
+        }
     }
 }
 

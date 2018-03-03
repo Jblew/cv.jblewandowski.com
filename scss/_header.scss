@@ -8,32 +8,15 @@ header {
     }
 }
 
+@media(max-width: $min-width-sm+(-1)) {
+    header {
+        margin-top: -5rem;
+    }
+}
+
+
+
 header h1 {
-    //    font-family: 'Cormorant Garamond', serif;
-    //    font-family: 'Playfair Display', serif;
-    //    font-family: 'Libre Baskerville', serif;
-    //    font-family: 'Abril Fatface', cursive;
-    //    font-family: 'EB Garamond', serif;
-    //    font-family: 'Cinzel', serif;
-    //    font-family: 'Old Standard TT', serif;
-    //-   font-family: 'Alegreya', serif;
-    //-   font-family: 'Noticia Text', serif;
-    //    font-family: 'Domine', serif;
-    //+   font-family: 'Cardo', serif;
-    //-   font-family: 'Tinos', serif;
-    //--  font-family: 'Alfa Slab One', cursive;
-    //  font-family: 'Playfair Display SC', serif;
-    //    font-family: 'Amiri', serif;
-    //--  font-family: 'Glegoo', serif;
-    //++  font-family: 'Frank Ruhl Libre', serif;
-    //++    font-family: 'Radley', serif;
-    //    font-family: 'Cormorant', serif;
-    //    font-family: 'Spectral', serif;
-    //    font-family: 'Sumana', serif;
-    //    font-family: 'Cormorant Infant', serif;
-    //    font-family: 'Bellefair', serif;
-    //++    font-family: 'Cormorant SC', serif;
-    //    font-family: 'Cormorant Unicase', serif;
     font-weight: 400;
     border-bottom: 0.8rem solid rgba(0,0,0,0.08);
     margin-bottom: 1.2rem;
@@ -66,6 +49,9 @@ header h1 .secondline {
     padding-left: 0.2em;
 }
 
+
+
+
 .profilowe-container {
     img {
         width: 100%;
@@ -76,6 +62,16 @@ header h1 .secondline {
                 box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.78);*/
     }
 }
+
+@media(max-width: $min-width-sm+(-1)) {
+    .profilowe-container img {
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+
 
 header blockquote {
     color: #555;
