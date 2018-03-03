@@ -1,0 +1,86 @@
+/*section {
+    //border-radius: 1rem;
+    padding: 0 !important;
+}
+
+section h2 {
+    //border-bottom: 0.15em solid $primary;
+    //border-bottom: 1px dotted rgba(0,0,0,0.1)
+    border-bottom: 1px solid white;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 0;
+}
+
+section .h2 {
+    //border-bottom: 0.15em solid $primary;
+    //border-bottom: 1px dotted rgba(0,0,0,0)
+}
+
+.section-kontakt {
+    background-color: #450920;
+    color: white;
+}*/
+
+section {
+    margin-bottom: 6rem;
+}
+
+
+.omnie {
+    .section-omnie {
+    }
+
+    .imager-omnie {
+        min-height: 8rem;
+        background: url(../img/patterns/vintage-scarlet.gif);
+    }
+}
+
+.cv {
+    .section-cv {
+        .cv-year {
+            min-width: 7rem;
+        }
+
+        .cv-para {
+            font-weight: 200;
+        }
+    }
+
+    .imager-cv {
+        min-height: 8rem;
+        background: url(../img/patterns/prim-walls.gif);
+    }
+}
+
+.skills {
+    .section-skills {
+        tbody, thead, tr, td, th {
+            border-color: rgba(255,255,255,0.3) !important;
+            border-width: 2px;
+        }
+
+        table tr:first-of-type td {
+            border-top: 0;
+        }
+
+        h3 {
+            @include body-font;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            margin-top: 1.2rem;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            position: relative;
+        }
+        
+        p {
+            margin-left: 1rem;
+        }
+    }
+
+    .imager-skills {
+        min-height: 8rem;
+        background: url(../img/patterns/victorian-sunshine-border.gif);
+    }
+}

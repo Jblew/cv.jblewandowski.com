@@ -1,0 +1,106 @@
+header {
+    margin-top: 2rem;
+}
+
+@media(min-width: $min-width-sm) {
+    header {
+        margin-top: 4rem;
+    }
+}
+
+header h1 {
+    //    font-family: 'Cormorant Garamond', serif;
+    //    font-family: 'Playfair Display', serif;
+    //    font-family: 'Libre Baskerville', serif;
+    //    font-family: 'Abril Fatface', cursive;
+    //    font-family: 'EB Garamond', serif;
+    //    font-family: 'Cinzel', serif;
+    //    font-family: 'Old Standard TT', serif;
+    //-   font-family: 'Alegreya', serif;
+    //-   font-family: 'Noticia Text', serif;
+    //    font-family: 'Domine', serif;
+    //+   font-family: 'Cardo', serif;
+    //-   font-family: 'Tinos', serif;
+    //--  font-family: 'Alfa Slab One', cursive;
+    //  font-family: 'Playfair Display SC', serif;
+    //    font-family: 'Amiri', serif;
+    //--  font-family: 'Glegoo', serif;
+    //++  font-family: 'Frank Ruhl Libre', serif;
+    //++    font-family: 'Radley', serif;
+    //    font-family: 'Cormorant', serif;
+    //    font-family: 'Spectral', serif;
+    //    font-family: 'Sumana', serif;
+    //    font-family: 'Cormorant Infant', serif;
+    //    font-family: 'Bellefair', serif;
+    //++    font-family: 'Cormorant SC', serif;
+    //    font-family: 'Cormorant Unicase', serif;
+    font-weight: 400;
+    border-bottom: 0.8rem solid rgba(0,0,0,0.08);
+    margin-bottom: 1.2rem;
+
+}
+
+@media (min-width: $min-width-md) {
+    header h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: $min-width-lg) {
+    header h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: $min-width-xl) {
+    header h1 {
+        font-size: 4.5rem;
+    }
+}
+
+header h1:first-letter {
+    font-size: 130%;
+}
+
+header h1 .secondline {
+    padding-left: 0.2em;
+}
+
+.profilowe-container {
+    img {
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        /*-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.78);
+           -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.78);
+                box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.78);*/
+    }
+}
+
+header blockquote {
+    color: #555;
+
+    padding-bottom: 1rem;
+    
+    small {
+        color: #777;
+    }
+}
+
+@media(min-width: $min-width-lg) {
+    header blockquote {
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media(min-width: $min-width-xl) {
+    header blockquote {
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+}
