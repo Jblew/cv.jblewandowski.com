@@ -1,0 +1,23 @@
+name: Jędrzej Lewandowski CV
+title: "Jędrzej Lewandowski: medical student and software developer"
+email: jedrzejblew@gmail.com
+description: A comprehensive user manual to WISE vote delegation system
+url: ""
+baseurl: "/"
+
+# Build settings
+markdown: kramdown
+include: [ "_pages" ]
+
+## Front matter defaults
+defaults:
+        
+
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+
+# Prayer:
+#  Gloria Patri, et Filio, et Spiritui Sancto, sicut erat in principio et nunc et semper et in saecula
+#  saeculorum. Amen. In te, Domine, speravi: non confundar in aeternum.
