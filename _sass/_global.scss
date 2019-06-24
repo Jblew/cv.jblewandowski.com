@@ -9,7 +9,14 @@ p {
 }
 
 a {
-    @include a-link
+    @include a-link;
+}
+
+main a {
+    background: rgba(0,0,0,0.25);
+    border-radius: .15em;
+    padding-left: .2em;
+    padding-right: .2em;
 }
 
 .text-primary {
