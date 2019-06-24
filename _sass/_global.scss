@@ -9,10 +9,7 @@ p {
 }
 
 a {
-    color: $primary;
-    &:hover {
-        color: darken($primary, 10%);
-    }
+    @include a-link
 }
 
 .text-primary {

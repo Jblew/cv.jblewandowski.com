@@ -18,9 +18,16 @@ header {
 
 header h1 {
     font-weight: 400;
-    border-bottom: 0.8rem solid rgba(0,0,0,0.08);
-    margin-bottom: 1.2rem;
+    /*border-bottom: 0.8rem solid rgba(0,0,0,0.08);
+    margin-bottom: 1.2rem;*/
 
+}
+
+header h2 {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1em;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 @media (min-width: $min-width-md) {
