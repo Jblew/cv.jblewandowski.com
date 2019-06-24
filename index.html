@@ -5,148 +5,24 @@
 <html lang="en">
     <head>{% include head.html %}</head>
     <body>
-        <header>
-            {% include header.html %}
-        </header>
+        <header>{% include header.html %}</header>
 
         <main role="main">
-            <div class="container midline">
-                <div class="row">
-                    <div class="col-12 email">
-                        <strong><span class="addr-protection" id="addrpro-1">[ochrona adresu &mdash; włącz javascript]</span> &nbsp; <img src="img/envelope.png" height="40" alt="envelope icon" /> &nbsp; gmail.com</strong>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 kontakty">
-                        <a href="https://github.com/jblew">github.com/jblew</a>
-                        <a href="https://www.linkedin.com/in/jędrzej-lewandowski">linkedin.com/in/jędrzej-lewandowski</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pattern-line-1-above">
-
-            </div>
-            <div class="pattern-line-1">
-
-            </div>
-
+            {% include contact-row.html %}
+            <div class="pattern-line-1-above"> </div>
+            <div class="pattern-line-1"> </div>
 
             <div class="container">
-                <section class="omnie">
-                    <div class="row">
-                        <div class="col-1 col-sm-2 col-md-3 imager-omnie imager">
+                {% include sections/introduction.html %}
 
-                        </div>
-                        <div class="col-11 col-sm-10 col-md-9 section-omnie">
-                            <p>
-                                Od dzieciństwa programuję — pierwszą stronę internetową (dla swojej szkoły) stworzyłem w 2004 roku.
-                                Od 2007 zajmowałem się pisaniem aplikacji w Javie, później także systemów wbudowanych na
-                                mikrokontrolerach typu AVR i ARM. 
-                            </p>
-                            <p>
-                                W życiu chciałem kierować się miłością i świadczyć pomoc ludziom w moim otoczeniu. W ścieżce programisty
-                                brakowało mi niesienia bezpośredniej pomocy drugiemu człowiekowi, w związku
-                                z czym w liceum postanowiłem zostać lekarzem. Na studiach medycznych nadal programowałem w Javie.
-                                Teraz wiem, że moją pasją jest zarówno medycyna (a szczególnie chirurgia), jak i programowanie.
-                                Chciałbym móc połączyć to w życiu, aby ludziom pomagać zarówno bezpośrednio jak i systemowo.
-                            </p>
-                        </div>
-                    </div>
-                </section>
+                {% include sections/cv.html %}
 
-                <section class="cv">
-                    <div class="row">
-                        <div class="col-11 col-sm-9 col-md-8 section-cv">
-                            <h2>Curriculum Vitae</h2>
-                            <table class="table table-sm">
-                                <tr>
-                                    <td class="cv-year"><i>2011 — 2014</i></td>
-                                    <td>I Liceum im. Jacka Kaczmarskiego w Olsztynku</td>
-                                </tr>
-                                <tr>
-                                    <td class="cv-year"><i>2014 — dziś</i></td>
-                                    <td><strong>Warszawski Uniwersytet Medyczny</strong>, kierunek lekarski</td>
-                                </tr>
-                                <tr>
-                                    <td class="cv-year cv-para"><i>2015 - 2016</i></td>
-                                    <td class="cv-para">Wiceprezes Akademickiego Stowarzyszenia Katolickiego Soli Deo</td>
-                                </tr>
-                                <tr>
-                                    <td class="cv-year cv-para"><i>2016 - 2017</i></td>
-                                    <td class="cv-para">Szef Gabinetu w ASK Soli Deo</td>
-                                </tr>
-                                <tr>
-                                    <td class="cv-year cv-para"><i>2017 - dziś</i></td>
-                                    <td class="cv-para">Szef Sekcji IT w ASK Soli Deo</td>
-                                </tr>
-                                <tr>
-                                    <td class="cv-year"><i>Marzec 2018 — dziś</i></td>
-                                    <td>Lead developer projektu WISE w <strong><a href="https://github.com/noisy-witness">noisy-witness</a></strong></td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col-1 col-sm-3 col-md-4 imager-cv imager">
-
-                        </div>
-                    </div>
-                </section>
-
-                <section class="skills">
-                    <div class="row">
-                        <div class="col-1 col-sm-3 col-md-4 imager-skills imager">
-
-                        </div>
-                        <div class="col-11 col-sm-9 col-md-8 section-skills">
-                            <h2>Umiejętności</h2>
-                            <h3>Umiem dobrze</h3>
-                            <p>Java SE 6/7/8, programowanie wielowątkowe w Javie, Webdesign (HTML, CSS, jQuery, Gimp)</p>
-                            
-                            <h3>Posługuję się sprawnie</h3>
-                            <p>Maven, GIT, Linux (Debianowate), PHP, Sieci LAN, Apache2, Nginx, SQL, javascript</p>
-                            
-                            <h3>Używam, kiedy potrzebuję</h3>
-                            <p>Java EE (JDBC, Servlety, Jetty, Netty.io), Guava, Jackson JSON, rxtx-java, SASS, CakePHP, Wordpress, Bash, Python, SVN (ale nie lubię), Arduino</p>
-                            
-                            <h3>Miałem przyjemność pracować z...</h3>
-                            <p>
-                                JUnit, SDKMan, Gradle, Commons Daemon, H2, Amazon AWS (EC2, S3 api)
-                                <span class="slashspacer">~</span> DIY Oświetlenie dyskotekowe (realtime sound processing, DMX512, AVR, 4-20mA) 
-                                <span class="slashspacer">~</span> rozproszone ESP8266
-                                <span class="slashspacer">~</span> Unity3D + serwer w Javie
-                                <span class="slashspacer">~</span> Blender 3D
-                            </p>
-                            
-                            <h3>Języki</h3>
-                            <p>Angielski — B2 (FCE, rozmawiam chętnie)</p>
-                        </div>
-                    </div>
-                </section>
-
+                {% include sections/skills.html %}
             </div>
         </main>
         
         
         <div class="footer-above"> </div>
-        <footer>
-            <div class="container">
-                
-                <p>
-                    Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do 
-                    realizacji procesu rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; 
-                    tekst jednolity: Dz. U. 2016 r. poz. 922).
-                </p>
-                <p>
-                    Strona wykorzystuje <a rel="nofollow" href="http://getbootstrap.com/">Bootstrap 4.0</a>
-                    i wzory z <a rel="nofollow" href="http://www.dinpattern.com/">DinPattern</a>. Serdecznie dziękuję autorom.
-                    | Hosting dzięki uprzejmości Github Pages.
-                </p>
-            </div>
-        </footer>
-       
-        <script type="text/javascript">
-            document.getElementById("addrpro-1").innerHTML = atob("amVkcnplamJsZXc=");
-            document.getElementById("addrpro-1").removeAttribute("class");
-        </script>
+        <footer>{% include footer.html %}</footer>
     </body>
 </html>
