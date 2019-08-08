@@ -3,26 +3,35 @@
 
 <!doctype html>
 <html lang="en">
-    <head>{% include head.html %}</head>
-    <body>
-        <header>{% include header.html %}</header>
 
-        <main role="main">
-            {% include contact-row.html %}
-            <div class="pattern-line-1-above"> </div>
-            <div class="pattern-line-1"> </div>
+<head>{% include head.html %}</head>
 
-            <div class="container">
-                {% include sections/introduction.html %}
+<body>
+    <header>{% include header.html %}</header>
 
-                {% include sections/cv.html %}
+    <main role="main">
+        {% include contact-row.html %}
+        <div class="pattern-line-1-above"> </div>
+        <div class="pattern-line-1"> </div>
 
-                {% include sections/skills.html %}
-            </div>
-        </main>
-        
-        
-        <div class="footer-above"> </div>
-        <footer>{% include footer.html %}</footer>
-    </body>
+        <div class="container">
+            {% include table-of-contents.html %}
+
+            {% include sections/introduction.html %}
+
+            {% include sections/cv.html %}
+
+            {% include sections/skills.html %}
+
+            {% include sections/projects.html %}
+
+            {% include sections/other.html %}
+        </div>
+    </main>
+
+
+    <div class="footer-above"> </div>
+    <footer>{% include footer.html %}</footer>
+</body>
+
 </html>

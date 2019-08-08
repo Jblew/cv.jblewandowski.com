@@ -26,20 +26,9 @@ section {
 }
 
 
-.imager {
-    -webkit-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.25);
-    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.25);
-}
-
 
 .omnie {
     .section-omnie {}
-
-    .imager-omnie {
-        min-height: 8rem;
-        background: url(../img/patterns/vintage-scarlet.gif);
-    }
 }
 
 .cv {
@@ -51,11 +40,6 @@ section {
         .cv-para {
             font-weight: 200;
         }
-    }
-
-    .imager-cv {
-        min-height: 8rem;
-        background: url(../img/patterns/prim-walls.gif);
     }
 }
 
@@ -88,11 +72,6 @@ section {
         p {
             margin-left: 1rem;
         }
-    }
-
-    .imager-skills {
-        min-height: 8rem;
-        background: url(../img/patterns/victorian-sunshine-border.gif);
     }
 
     .skill-star-table {

@@ -1,6 +1,5 @@
 ---
 ---
-
 // Core variables and mixins
 @import "variables.scss";
 @import "mixins.scss";
@@ -14,5 +13,7 @@
 //Page elements
 @import "header.scss";
 @import "midline.scss";
+@import "table-of-contents.scss";
 @import "sections.scss";
+@import "patternfields.scss";
 @import "footer.scss"
