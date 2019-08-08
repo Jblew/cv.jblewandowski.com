@@ -1,5 +1,5 @@
 .motto {
-    display: block;
+    display: none;
     max-width: 40rem;
     margin: 0 auto;
 
@@ -7,6 +7,12 @@
 
     small {
         color: #999;
+    }
+}
+
+@media(min-width: $min-width-sm) {
+    .motto {
+        display: block;
     }
 }
 
