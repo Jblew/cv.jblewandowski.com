@@ -27,15 +27,14 @@ section {
 
 
 .imager {
-    -webkit-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.25);
-    -moz-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.25);
-    box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.25);
 }
 
 
 .omnie {
-    .section-omnie {
-    }
+    .section-omnie {}
 
     .imager-omnie {
         min-height: 8rem;
@@ -62,8 +61,13 @@ section {
 
 .skills {
     .section-skills {
-        tbody, thead, tr, td, th {
-            border-color: rgba(255,255,255,0.3) !important;
+
+        tbody,
+        thead,
+        tr,
+        td,
+        th {
+            border-color: rgba(255, 255, 255, 0.3) !important;
             border-width: 2px;
         }
 
@@ -89,5 +93,15 @@ section {
     .imager-skills {
         min-height: 8rem;
         background: url(../img/patterns/victorian-sunshine-border.gif);
+    }
+
+    .skill-star-table {
+        border: 0;
+        margin-bottom: 1rem;
+    }
+
+    .skill-star-table td {
+        vertical-align: top;
+        padding: 0.25rem;
     }
 }
