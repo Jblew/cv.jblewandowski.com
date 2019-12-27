@@ -21,7 +21,22 @@ header h1 {
     font-size: 2.35rem;
     /*border-bottom: 0.8rem solid rgba(0,0,0,0.08);
     margin-bottom: 1.2rem;*/
+}
 
+
+#firstname {
+    position: relative;
+}
+#firstname::after {
+    position: absolute;
+    bottom: -0.7em;
+    font-size: 0.3em;
+    right: 0;
+    color: rgba(0,0,0,0.3);
+    content: "(pronounce “J-J”)"
+}
+#firstname:hover::after {
+    color: rgba(0,0,0,0.8);
 }
 
 header h2 {
