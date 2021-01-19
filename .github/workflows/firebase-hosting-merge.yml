@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          apt-get update &&
-          apt install -y build-essential git ruby ruby-dev &&
-          gem install bundler
+          sudo apt-get update &&
+          sudo apt install -y build-essential git ruby ruby-dev &&
+          sudo gem install bundler
       - uses: actions/checkout@v2
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
