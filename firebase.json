@@ -1,0 +1,14 @@
+{
+  "hosting": [
+    {
+      "target": "jedrzej-lewandowski-doctor",
+      "public": "cv",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "predeploy": "build.sh"
+    }
+  ]
+}
