@@ -17,6 +17,14 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
+plugins:
+  - jekyll-feed
+  - jekyll-archives
+  - jekyll-include-cache
+  - jekyll-commonmark
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
 sass:
   sass_dir: _sass
   style: compressed
