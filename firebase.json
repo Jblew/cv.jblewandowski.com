@@ -8,7 +8,7 @@
         "**/.*",
         "**/node_modules/**"
       ],
-      "predeploy": "build.sh"
+      "predeploy": "./build.sh"
     }
   ]
 }
