@@ -15,6 +15,8 @@ jobs:
           sudo apt install -y build-essential git ruby ruby-dev &&
           sudo gem install bundler
       - uses: actions/checkout@v2
+      - run: bundle install
+      - run: bundle exec jekyll build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
