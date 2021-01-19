@@ -12,9 +12,9 @@ jobs:
     steps:
       - run: |
           sudo apt-get update &&
-          sudo apt install -y build-essential git ruby ruby-dev &&
-          gem install bundler
+          sudo apt install -y build-essential git ruby ruby-dev
       - uses: actions/checkout@v2
+      - run: gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)" # Source: https://bundler.io/blog/2019/05/14/solutions-for-cant-find-gem-bundler-with-executable-bundle.html
       - run: bundle install
       - run: bundle exec jekyll build
       - uses: FirebaseExtended/action-hosting-deploy@v0
