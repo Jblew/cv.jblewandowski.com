@@ -1,7 +1,7 @@
 {
   "hosting": [
     {
-      "target": "jedrzej-lewandowski-doctor",
+      "target": "cv-jblew-pl",
       "public": "_site",
       "ignore": [
         "firebase.json",
