@@ -1,0 +1,17 @@
+header {
+    img {
+        float: right;
+        max-width: 250px;
+    }
+
+    h1 {
+        font-weight: normal;
+        span {
+            font-weight: bold;
+            ::after {
+                content: "\n";
+                white-space: pre;
+            }
+        }
+    }
+}
