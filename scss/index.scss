@@ -1,0 +1,52 @@
+@import "../node_modules/sassy-gridlover/sassy-gridlover/sassy-gridlover";
+
+$sgl-base-font-size: 12;
+$sgl-base-line-height: 1.5;
+$sgl-scale-factor: 1.5;
+
+html {
+    @include sgl-html;
+}
+
+body {
+    @include sgl-body;
+    font-family: sans-serif;
+    max-width: 760px;
+    margin: auto;
+}
+
+h1 {
+    @include sgl-heading(3, 0, 1, 2);
+}
+
+h2 {
+    @include sgl-heading(2, 0, 1, 1);
+}
+
+h3 {
+    @include sgl-heading(1, 0, 1, 0);
+}
+
+h4 {
+    @include sgl-heading(0, 0, 1, 0);
+}
+
+h5 {
+    @include sgl-heading(0, 0, 1, 0);
+}
+
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+    @include sgl-margins(0, 1);
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+    @include sgl-margins(0, 0);
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cv.jblew.pl",
+  "version": "1.0.0",
+  "description": "",
+  "private": "true",
+  "scripts": {
+    "build:sass": "node build-sass.js",
+    "build": "npm run build:sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jblew/cv.jblew.pl.git"
+  },
+  "author": "",
+  "license": "Unlicensed",
+  "bugs": {
+    "url": "https://github.com/Jblew/cv.jblew.pl/issues"
+  },
+  "homepage": "https://github.com/Jblew/cv.jblew.pl#readme",
+  "devDependencies": {
+    "sass": "1.49.10"
+  },
+  "dependencies": {
+    "sassy-gridlover": "^6.0.5"
+  }
+}
