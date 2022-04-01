@@ -2,7 +2,7 @@
   "hosting": [
     {
       "target": "cv-jblew-pl",
-      "public": "_site",
+      "public": "dist",
       "ignore": [
         "firebase.json",
         "**/.*",
