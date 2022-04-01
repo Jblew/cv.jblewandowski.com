@@ -8,8 +8,8 @@ header {
         font-weight: normal;
         span {
             font-weight: bold;
-            ::after {
-                content: "\n";
+            &::after {
+                content: "\a";
                 white-space: pre;
             }
         }

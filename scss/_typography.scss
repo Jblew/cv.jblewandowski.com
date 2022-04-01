@@ -1,57 +1,38 @@
-@import "../node_modules/sassy-gridlover/sassy-gridlover/sassy-gridlover";
+$unit: "pxrem";
+$base-font-size: $base-font-size;
+$line-height-scale: $line-height-scale;
+$font-scale: $font-scale;
+$true-scale: false;
+
+@import "rhythm";
 
 html {
-    @include sgl-html;
+    @include rhythm("base");
+    font-family: sans-serif;
 }
 
 body {
-    @include sgl-body(0);
-    font-family: sans-serif;
-    max-width: 760px;
-    margin: auto;
+    @include rhythm(0);
 }
 
 h1 {
-    @include sgl-heading(3, 0, 0, 0);
+    @include rhythm(3, 1, 2);
 }
 
 h2 {
-    @include sgl-heading(2, 0, 0, 0);
+    @include rhythm(2, 1, 1);
 }
 
 h3 {
-    @include sgl-heading(1, 0, 0, 0);
+    @include rhythm(1, 1);
 }
 
 h4 {
-    @include sgl-heading(0, 0, 0, 0);
-}
-
-h5 {
-    @include sgl-heading(0, 0, 0, 0);
-}
-
-h1,
-h2 {
-    text-transform: uppercase;
-}
-
-h1 {
-    text-align: center;
+    @include rhythm(0, 1);
 }
 
 p,
 ul,
-ol,
-pre,
-table,
-blockquote {
-    @include sgl-margins(0, 1);
-}
-
-ul ul,
-ol ol,
-ul ol,
-ol ul {
-    @include sgl-margins(0, 0);
+ol {
+    @include rhythm(0, 0, 1, 2);
 }
