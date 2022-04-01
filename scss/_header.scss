@@ -1,17 +1,63 @@
 header {
+    margin-bottom: 4rem;
+
     img {
         float: right;
-        max-width: 250px;
+        max-height: 20rem;
+        clear: both;
     }
 
     h1 {
+        @include h2;
+
         font-weight: normal;
+
         span {
             font-weight: bold;
+
             &::after {
                 content: "\a";
                 white-space: pre;
             }
+        }
+    }
+
+    h2 {
+        @include h3;
+        text-transform: uppercase;
+        font-weight: lighter;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    figure {
+        @include rhythm(0, 1, 0, 2);
+        color: rgba(0, 0, 0, 0.6);
+        font-style: italic;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 3rem;
+
+        blockquote {
+            margin: 0;
+        }
+
+        figcaption {
+            font-size: 0.75em;
+            top: -0.2em;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+    }
+
+    address {
+        text-align: center;
+        font-style: normal;
+        margin-bottom: 2rem;
+
+        a {
+            margin: 0 1rem;
         }
     }
 }
