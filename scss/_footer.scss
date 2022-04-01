@@ -1,0 +1,11 @@
+footer {
+    $footer-color: rgba(0, 0, 0, 0.6);
+    margin-top: 6rem;
+    border-top: 1rem solid rgba(0, 0, 0, 0.15);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 4rem;
+
+    color: $footer-color;
+    text-align: center;
+}

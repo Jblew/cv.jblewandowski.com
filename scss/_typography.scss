@@ -22,7 +22,7 @@ body {
 }
 
 @mixin h2 {
-    @include rhythm(2, 1, 1);
+    @include rhythm(2, 3, 1);
     text-transform: uppercase;
 }
 
