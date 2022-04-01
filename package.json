@@ -5,7 +5,8 @@
   "private": "true",
   "scripts": {
     "build:sass": "node build-sass.js",
-    "build": "npm run build:sass"
+    "build:dist": "rm -rf dist && mkdir dist && cp -R static/* dist/ && cp style.css index.html dist/",
+    "build": "npm run build:sass && npm run build:dist"
   },
   "repository": {
     "type": "git",
