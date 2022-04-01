@@ -2,9 +2,26 @@ header {
     margin-bottom: 5rem;
 
     img {
-        float: right;
-        max-height: 20rem;
-        clear: both;
+        display: block;
+        margin: 0 auto;
+        margin-top: 3rem;
+        width: 12rem;
+        height: 12rem;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: 0 15%;
+
+        @include sm {
+            display: inline;
+            margin: 0 0;
+            border-radius: 0;
+            float: right;
+            max-width: auto;
+            max-height: 20rem;
+            height: auto;
+            width: auto;
+            clear: both;
+        }
     }
 
     h1 {
