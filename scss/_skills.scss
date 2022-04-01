@@ -1,0 +1,25 @@
+.skills {
+    .skills-list {
+        margin-top: 3rem;
+        columns: 2;
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        dt {
+            @include rhythm(0, 0, 0, 2);
+            float: left;
+            margin-right: 1rem;
+            clear: both;
+        }
+
+        dd {
+            @include rhythm(0, 0, 0, 2);
+        }
+
+        dl {
+            break-inside: avoid;
+        }
+    }
+}
