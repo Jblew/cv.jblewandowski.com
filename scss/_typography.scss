@@ -4,7 +4,7 @@ $line-height-scale: $line-height-scale;
 $font-scale: $font-scale;
 $true-scale: false;
 
-@import "rhythm";
+@import "vendor/rhythm";
 
 html {
     @include rhythm("base");
@@ -33,6 +33,9 @@ h4 {
 
 p,
 ul,
-ol {
+ol,
+blockquote,
+figure,
+figcaption {
     @include rhythm(0, 0, 1, 2);
 }

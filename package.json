@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Jblew/cv.jblew.pl#readme",
   "devDependencies": {
+    "node-fetch": "^2.6.7",
     "sass": "1.49.10"
   }
 }
