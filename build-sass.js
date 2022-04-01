@@ -20,7 +20,7 @@ function compileSASS(scrfile, outfile, options) {
 }
 
 async function main() {
-    await fetchSCSSVendor("https://github.com/Jblew/gridlover-mixin/blob/35a66513a9791577cb81c34fdfdfa4868acfd9f8/rhythm.scss", "rhythm")
+    await fetchSCSSVendor("https://raw.githubusercontent.com/Jblew/gridlover-mixin/35a66513a9791577cb81c34fdfdfa4868acfd9f8/rhythm.scss", "rhythm")
     compileSASS("index.scss", "style.css", { style: "expanded" })
     compileSASS("index.scss", "style.min.css", { style: "compressed" })
 }
