@@ -7,8 +7,13 @@
             columns: 2;
         }
 
-        h2:first-of-type {
+        h2 {
             margin-top: 0;
+        }
+
+        dl {
+            break-inside: avoid;
+            margin-bottom: 3rem;
         }
 
         dt {
@@ -20,10 +25,6 @@
 
         dd {
             @include rhythm(0, 0, 0, 2);
-        }
-
-        dl {
-            break-inside: avoid;
         }
     }
 }
