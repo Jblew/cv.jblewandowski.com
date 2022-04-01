@@ -1,7 +1,11 @@
 .skills {
     .skills-list {
         margin-top: 3rem;
-        columns: 2;
+        columns: 1;
+
+        @include sm {
+            columns: 2;
+        }
 
         h2:first-of-type {
             margin-top: 0;
