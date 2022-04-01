@@ -80,11 +80,14 @@ header {
         text-align: center;
         font-style: normal;
         margin-bottom: 2rem;
+        line-height: 3rem;
 
         @include sm {
             display: grid;
             grid-template-columns: 1fr 1fr;
             column-gap: 1rem;
+
+            line-height: 2rem;
         }
 
         a {
