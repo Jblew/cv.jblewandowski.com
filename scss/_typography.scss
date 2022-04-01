@@ -16,7 +16,7 @@ body {
 }
 
 @mixin h1 {
-    @include rhythm(3, 3, 1);
+    @include rhythm(3, 4, 1);
     text-align: center;
     text-transform: uppercase;
 }
