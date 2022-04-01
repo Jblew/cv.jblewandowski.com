@@ -80,3 +80,13 @@ a {
     -moz-hyphens: auto;
     hyphens: auto;
 }
+
+time {
+    font-style: italic;
+}
+
+h1 time,
+h2 time,
+h3 time {
+    font-style: normal;
+}
