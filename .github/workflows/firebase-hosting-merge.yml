@@ -10,13 +10,8 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          sudo apt-get update &&
-          sudo apt install -y build-essential git ruby ruby-dev
       - uses: actions/checkout@v2
-      - run: sudo gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)" # Source: https://bundler.io/blog/2019/05/14/solutions-for-cant-find-gem-bundler-with-executable-bundle.html
-      - run: bundle install
-      - run: bundle exec jekyll build
+      - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'

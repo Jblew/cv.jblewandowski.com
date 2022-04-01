@@ -1,0 +1,14 @@
+body {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+h1 + h2 {
+    margin-top: 2rem;
+}
+
+li > p {
+    margin-top: 0;
+}

@@ -1,0 +1,106 @@
+header {
+    margin-bottom: 5rem;
+
+    img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 3rem;
+        width: 12rem;
+        height: 12rem;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: 0 15%;
+
+        @include sm {
+            display: inline;
+            margin: 0 0;
+            border-radius: 0;
+            float: right;
+            max-width: auto;
+            max-height: 20rem;
+            height: auto;
+            width: auto;
+            clear: both;
+        }
+    }
+
+    h1 {
+        @include h2;
+
+        font-weight: normal;
+
+        span {
+            font-weight: bold;
+
+            &::after {
+                content: "\a";
+                white-space: pre;
+            }
+        }
+    }
+
+    h2 {
+        @include h3;
+        text-transform: uppercase;
+        font-weight: lighter;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    figure {
+        @include rhythm(0, 1, 0, 2);
+        color: rgba(0, 0, 0, 0.6);
+        font-style: italic;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 3rem;
+
+        blockquote {
+            margin: 0;
+            padding: 0 4rem;
+
+            @include sm {
+                padding: 0 0;
+            }
+        }
+
+        figcaption {
+            font-size: 0.75em;
+
+            @include sm {
+                top: -0.1em;
+                line-height: 0;
+                position: relative;
+                vertical-align: baseline;
+            }
+        }
+    }
+
+    address {
+        text-align: center;
+        font-style: normal;
+        margin-bottom: 2rem;
+
+        @include sm {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 1rem;
+        }
+
+        a {
+            break-inside: avoid;
+            word-break: keep-all;
+            hyphens: none;
+            text-align: center;
+            display: block;
+
+            @include sm {
+                text-align: right;
+
+                &:nth-child(even) {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

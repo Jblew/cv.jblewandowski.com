@@ -1,0 +1,92 @@
+$unit: "pxrem";
+$base-font-size: $base-font-size;
+$line-height-scale: $line-height-scale;
+$font-scale: $font-scale;
+$true-scale: false;
+
+@import "vendor/rhythm";
+
+html {
+    @include rhythm("base");
+    font-family: sans-serif;
+}
+
+body {
+    @include rhythm(0);
+}
+
+@mixin h1 {
+    @include rhythm(3, 4, 1);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@mixin h2 {
+    @include rhythm(2, 3, 1);
+    text-transform: uppercase;
+}
+
+@mixin h3 {
+    @include rhythm(1, 1);
+}
+
+@mixin h4 {
+    @include rhythm(0, 1);
+}
+
+h1 {
+    @include h1;
+}
+
+h2 {
+    @include h2;
+}
+
+h3 {
+    @include h3;
+}
+
+h4 {
+    @include h4;
+}
+
+p,
+ul,
+ol,
+blockquote,
+figure,
+figcaption,
+address {
+    @include rhythm(0, 0, 1, 2);
+}
+
+ul, ol {
+    padding-inline-start: 0;
+    padding-left: 1rem;
+
+    @include sm {
+        padding-left: 2rem;
+    }
+}
+
+a {
+    -ms-word-break: break-all;
+    word-break: break-all;
+    
+    // Non standard for webkit
+    word-break: break-word;
+    
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+time {
+    font-style: italic;
+}
+
+h1 time,
+h2 time,
+h3 time {
+    font-style: normal;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "cv.jblew.pl",
+  "version": "1.0.0",
+  "description": "",
+  "private": "true",
+  "scripts": {
+    "build:sass": "node build-sass.js",
+    "build:dist": "rm -rf dist && mkdir dist && cp -R static/* dist/ && cp style.css index.html dist/",
+    "build": "npm run build:sass && npm run build:dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jblew/cv.jblew.pl.git"
+  },
+  "author": "",
+  "license": "Unlicensed",
+  "bugs": {
+    "url": "https://github.com/Jblew/cv.jblew.pl/issues"
+  },
+  "homepage": "https://github.com/Jblew/cv.jblew.pl#readme",
+  "devDependencies": {
+    "node-fetch": "^2.6.7",
+    "sass": "1.49.10"
+  }
+}

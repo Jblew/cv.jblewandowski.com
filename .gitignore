@@ -1,2 +1,7 @@
 .DS_Store
 /_site
+/node_modules
+/style.css
+/style.min.css
+/scss/vendor
+/dist
